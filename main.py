@@ -20,7 +20,7 @@ def count_letters(file_contents):
     letter_count = {}
     lwrcase_txt = file_contents.lower()
     for letter in lwrcase_txt:
-        if letter.isalpha():
+        if letter.isalpha(): # Checks if the letter is part of the alphabet and not another character
                 if letter in letter_count:
                     letter_count[letter] +=1
                 else:
